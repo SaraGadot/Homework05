@@ -6,12 +6,30 @@ namespace Task02.StringSplit
     {
         static void Main(string[] args)
         {
-           
+            var text = "Задание 2.Создание методов, которые принимают текст и возвращают слова";
+            var word = MinWord(text);
+            Console.WriteLine(word);
+
+            
         }
-        //static string MinWord(string text)
-        //{
-        //    text.Split()
-        //}
+        static string MinWord(string text)
+        {
+           
+            var words = text.Split(' ');
+            var minword = words[0];
+            for (var i = 0;i < words.Length; i++)
+            {
+                // Console.WriteLine($"minWord={minword}, words[i]={words[i]}, {string.Compare(words[i], minword)}");
+                if (words[i].Length < minword.Length) 
+                {
+                    minword = words[i];
+                
+                }
+            }
+            //Console.WriteLine(MinWord);
+            return minword;
+        }
+
     }
 }
 //Задание 2.Создание методов, которые принимают текст и возвращают слова
