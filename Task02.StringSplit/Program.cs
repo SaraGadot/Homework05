@@ -16,7 +16,7 @@ namespace Task02.StringSplit
         static string MinWord(string text)
         {
            
-            var words = text.Split(' ');
+            var words = text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             var minword = words[0];
             for (var i = 0;i < words.Length; i++)
             {
