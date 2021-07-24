@@ -6,9 +6,10 @@ namespace Task02.StringSplit
     {
         static void Main(string[] args)
         {
-            var text = "Задание 2.Создание методов, которые принимают текст и возвращают слова";
+            Console.WriteLine("Введите фразу: ");
+            var text = Console.ReadLine();
             var word = MinWord(text);
-            Console.WriteLine(word);
+            Console.WriteLine($"Слово с минимальной длиной: '{word}'");
 
             
         }
