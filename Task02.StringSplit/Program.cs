@@ -10,6 +10,7 @@ namespace Task02.StringSplit
             var text = Console.ReadLine();
             var word = MinWord(text);
             Console.WriteLine($"Слово с минимальной длиной: '{word}'");
+            MaxWords(text);
 
             
         }
@@ -18,7 +19,7 @@ namespace Task02.StringSplit
            
             var words = text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             var minword = words[0];
-            for (var i = 0;i < words.Length; i++)
+            for (var i = 0; i < words.Length; i++)
             {
                 // Console.WriteLine($"minWord={minword}, words[i]={words[i]}, {string.Compare(words[i], minword)}");
                 if (words[i].Length < minword.Length) 
@@ -31,6 +32,20 @@ namespace Task02.StringSplit
             return minword;
         }
 
+        static string[] MaxWords(string text)
+        {
+            var words = text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var maxLength = 0;
+            for (var i = 0; i < words.Length; i++)
+            {
+                if (maxLength < words[i].Length)
+                {
+                    maxLength = words[i].Length;
+                }
+            }
+            Console.WriteLine(maxLength);
+            return null;
+        }
     }
 }
 //Задание 2.Создание методов, которые принимают текст и возвращают слова
