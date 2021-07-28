@@ -40,13 +40,15 @@ namespace Task02.StringSplit
         {
             var words = text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             var maxLength = 0;
-            for (var i = 0; i < words.Length; i++)
+            foreach (var word in words)
             {
-                if (maxLength < words[i].Length)
+                if (maxLength < word.Length)
                 {
-                    maxLength = words[i].Length;
+                    maxLength = word.Length;
                 }
+
             }
+            
             Console.WriteLine(maxLength);
             return null;
         }
