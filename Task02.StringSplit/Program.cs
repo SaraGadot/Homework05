@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Task02.StringSplit
 {
@@ -10,7 +11,14 @@ namespace Task02.StringSplit
             var text = Console.ReadLine();
             var word = MinWord(text);
             Console.WriteLine($"Слово с минимальной длиной: '{word}'");
-            MaxWords(text);
+            
+            var maxWords = MaxWords(text);
+            Console.WriteLine("Слова с максимальной длиной:");
+            foreach (var maxWord in maxWords)
+            {
+                Console.WriteLine(maxWord);
+            }
+
 
             
         }
@@ -49,8 +57,18 @@ namespace Task02.StringSplit
 
             }
             
-            Console.WriteLine(maxLength);
-            return null;
+            // Console.WriteLine(maxLength);
+
+            var maxWords = new List<string>();
+            foreach (var word in words)
+            {
+                if (word.Length == maxLength)
+                {
+                    maxWords.Add(word);
+                }
+            }
+
+            return maxWords.ToArray();
         }
     }
 }
