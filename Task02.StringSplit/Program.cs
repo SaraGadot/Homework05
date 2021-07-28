@@ -18,6 +18,10 @@ namespace Task02.StringSplit
         {
            
             var words = text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            if (words.Length == 0)
+            {
+                return "";
+            }
             var minword = words[0];
             for (var i = 0; i < words.Length; i++)
             {
