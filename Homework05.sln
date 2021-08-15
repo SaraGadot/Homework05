@@ -7,11 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task01.Matrix", "Task01.Mat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task02.StringSplit", "Task02.StringSplit\Task02.StringSplit.csproj", "{7576A5DA-EC3C-4809-B398-862D11A60C9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task03.StringDistinct", "Task03.StringDistinct\Task03.StringDistinct.csproj", "{21CCA671-4F75-4829-8A87-743E345D661A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task03.StringDistinct", "Task03.StringDistinct\Task03.StringDistinct.csproj", "{21CCA671-4F75-4829-8A87-743E345D661A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task04.Progression", "Task04.Progression\Task04.Progression.csproj", "{050352B2-E25F-46CF-AA11-53017D5F8042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task04.Progression", "Task04.Progression\Task04.Progression.csproj", "{050352B2-E25F-46CF-AA11-53017D5F8042}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task04.Progression.Tests", "Task04.Progression.Tests\Task04.Progression.Tests.csproj", "{70500B64-19D4-464E-98CD-5340B0E83A14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task04.Progression.Tests", "Task04.Progression.Tests\Task04.Progression.Tests.csproj", "{70500B64-19D4-464E-98CD-5340B0E83A14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task05.Akkerman", "Task05.Akkerman\Task05.Akkerman.csproj", "{A3E307DB-C4FA-4559-9DB1-B77F5D4172EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task05.Akkerman.Tests", "Task05.Akkerman.Tests\Task05.Akkerman.Tests.csproj", "{BB605F88-02DC-4D4E-AF34-393C3E10DB89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{70500B64-19D4-464E-98CD-5340B0E83A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70500B64-19D4-464E-98CD-5340B0E83A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70500B64-19D4-464E-98CD-5340B0E83A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E307DB-C4FA-4559-9DB1-B77F5D4172EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E307DB-C4FA-4559-9DB1-B77F5D4172EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E307DB-C4FA-4559-9DB1-B77F5D4172EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E307DB-C4FA-4559-9DB1-B77F5D4172EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB605F88-02DC-4D4E-AF34-393C3E10DB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB605F88-02DC-4D4E-AF34-393C3E10DB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB605F88-02DC-4D4E-AF34-393C3E10DB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB605F88-02DC-4D4E-AF34-393C3E10DB89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
